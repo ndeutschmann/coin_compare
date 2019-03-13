@@ -12,7 +12,7 @@ def generate_test_measure_sample(p,N1,N2,MC_stat=1000):
     ts = deltap/sqrt((2*p*(1-p)*2/(N1+N2)))  
     return ts
 
-def how_many_sigma_for_alpha(p,N1,N2,alpha=0.05,MC_stat=1000,n_bins=10):
+def how_many_sigma_for_alpha(p,N1,N2,alpha=0.05,MC_stat=1000,n_bins=50):
     # Compute the number of standard deviations needed to reach
     # a significance of alpha in our test statistic (which has SD=1)
     data = generate_test_measure_sample(p,N1,N2,MC_stat)
